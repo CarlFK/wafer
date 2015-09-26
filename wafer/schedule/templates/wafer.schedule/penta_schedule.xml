@@ -60,6 +60,7 @@
                                <person id="{{ author.pk }}"
                                   {% if author.userprofile.twitter_handle %}
                                   twitter="https://twitter.com/{{ author.userprofile.twitter_handle }}"
+                                  twitter_handle="{{ author.userprofile.twitter_handle }}"
                                   {% endif %}
                                   contact="{{ author.email }}">
                                   {{ author.get_full_name|default:author.username }}
